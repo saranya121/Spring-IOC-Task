@@ -1,0 +1,46 @@
+.product-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(211, 215, 207);
+}
+
+.product-card {
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-save {
+	background-color: #007bff;
+	color: white;
+}
+
+.btn-save:hover {
+	background-color: #0056b3;
+}
+
+.red-color {
+	color: red;
+}
+
+.btn-back {
+	background-color: grey;
+	color: white;
+}
+
+.btn-back:hover {
+	background-color: grey;
+}
+
+.btn-search {
+	background-color: #007bff;
+	color: white;
+}
+
+.btn-search:hover {
+	background-color: #0056b3;
+}

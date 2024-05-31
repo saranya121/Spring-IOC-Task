@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Catalog Page</title>
+<!-- Bootstrap CSS -->
+<link th:href="@{assets/css/bootstrap.min.css}" rel="stylesheet">
+<!-- Custom CSS -->
+<link th:href="@{assets/css/style.css}" rel="stylesheet">
+</head>
+<body>
+	<div class="product-container">
+		<div class="product-card bg-white p-4 rounded shadow-sm">
+			<h3 class="text-center mb-4">Product Catalog System</h3>
+			<p class="text-center mb-4">Please click the below button to add
+				/ display product</p>
+			<form th:action="@{/login}" method="post">
+				<div class="d-grid">
+					<button type="button" class="btn btn-save"
+						onclick="switchPage('Add')">Add Product</button>
+				</div>
+				<div class="d-grid mt-5">
+					<button type="button" class="btn btn-save"
+						onclick="switchPage('Display')">Display Product</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS Bundle with Popper -->
+	<script th:src="@{assets/js/bootstrap.bundle.min.js}"></script>
+	<script th:src="@{assets/js/Product/product.js}"></script>
+</body>
+</html>
